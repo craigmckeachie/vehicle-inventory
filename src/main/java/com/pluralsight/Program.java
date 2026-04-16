@@ -11,7 +11,7 @@ public class Program {
         boolean programIsRunning = true;
 
         while (programIsRunning) {
-            System.out.println("""
+            System.out.print("""
                     What do you want to do?
                      1 - List all vehicles
                      2 - Search by make/model
@@ -31,9 +31,7 @@ public class Program {
                 case 4 -> findVehiclesByColor();
                 case 5 -> addAVehicle();
                 case 6 -> programIsRunning = false;
-                default -> {
-                    System.out.println("Invalid command. Please try again.");
-                }
+                default -> System.out.println("Invalid command. Please try again.");
             }
         }
 
