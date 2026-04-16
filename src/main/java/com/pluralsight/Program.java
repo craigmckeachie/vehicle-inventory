@@ -62,12 +62,16 @@ public class Program {
 //            System.out.println(vehicle);
 //        }
 
+        int count = 0;
         //new style (for each)
         for (Vehicle vehicle : vehicles) {
             if (vehicle != null) {
                 System.out.println(vehicle);
+                count++;
             }
         }
+        System.out.printf("There are %d vehicles.", count);
+        System.out.println();
     }
 
     private static Vehicle[] getVehicles() {
